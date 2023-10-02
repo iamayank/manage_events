@@ -11,7 +11,7 @@ if (isset($_POST["full_name"])) {
 	$college = $_POST['college'];
 	$branch = $_POST['branch'];
 	$name = "/^[a-zA-Z ]+$/";
-	$emailValidation = "/[a-z0-9]+(\.[a-z]{2,4})$/";
+	$emailValidation = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$/";
 	$number = "/^[0-9]+$/";
 
 if(empty($full_name)  || empty($email)  ||
